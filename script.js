@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 
 //submit form validation
-  $("button").click(function(e) {
+  $("#formSubmit").click(function(e) {
     if ($("#pw").val().length < 6) {
       e.preventDefault();
       $("#pw").next("span").addClass("red")
@@ -61,4 +61,8 @@ $(document).ready(function() {
     };
   });
 
+//drop down menu
+  $("li").click(function(){
+    $("#selected").html($(this).text())
+  });
 });

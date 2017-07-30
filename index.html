@@ -9,6 +9,20 @@
     <link href="stylesheet.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class"container">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span><span id="selected"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Bananas</a></li>
+          <li><a href="#">Apples</a></li>
+          <li><a href="#">Oranges</a></li>
+        </ul>
+      </div>
+    </div>
+
     <div class="container">
       <form class="form-signin">
           <label for="inputUser" class="sr-only">Username</label>
@@ -21,10 +35,12 @@
           <input id="pwMatch" class="form-control" placeholder="Confirm Password" type="password" maxlength="16"></input>
           <span class="hidden"></span>
           <div id="pwMatchText" class="hidden">Password does not match</div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+          <button id="formSubmit" class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
       </form>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>
